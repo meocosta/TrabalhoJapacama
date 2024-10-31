@@ -13,6 +13,8 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
+
+        {/*routes primarias */}
         <Routes>
 
           <Route path="/" element={<Home />} />
@@ -22,6 +24,13 @@ function App() {
 
 
         </Routes>
+
+        {/*routes secundarias */}
+        <Routes>
+          {/*<Route path="/aba-primaria/aba-secundária" element={<aba-secundária />} />*/}
+        </Routes>
+
+
         <Footer />
       </BrowserRouter>
     </>
