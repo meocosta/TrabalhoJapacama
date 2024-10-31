@@ -1,0 +1,285 @@
+@import '../principal/padrão.scss';
+
+
+
+#creditos-container {
+    padding: 30px 0px;
+    font-family: $Staaliches;
+    color: $verdeEscuro;
+    text-align: center;
+    font-size: 4.5vw;
+
+    h2 {
+        margin: 20px 0px
+    }
+
+    hr {
+        width: 100%;
+        height: 5px;
+        background-color: $verde;
+    }
+}
+
+#intro-container {
+    #welcome {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 10vw;
+            font-family: $Staaliches;
+            color: $verde;
+        }
+
+        hr {
+            width: 30vw;
+            height: 5px;
+            background-color: $verde;
+        }
+    }
+
+    #sala {
+        background-color: $branco;
+        box-shadow: 0px 0px 20px $verdeEscuro;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 3vw;
+            color: $verdeEscuro;
+            font-family: $Staaliches;
+            text-align: center;
+        }
+    }
+}
+
+#CarroselImagens-container,
+#CarroselArtigos-container {
+
+    h3,
+    #a {
+        font-family: $Ubuntu;
+        color: $branco;
+        text-align: center;
+        background-color: $verde;
+        padding: 5px;
+        font-size: 2vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: $verdeEscuro;
+        cursor: pointer;
+        font-size: 2vw;
+        @extend #a;
+    }
+}
+
+
+#CarroselImagens-container {
+    #carrosel {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        p {
+            @extend #erro_p;
+        }
+
+        a{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img {
+            width: 20vw;
+            height: 20vw;
+            overflow: hidden;
+
+            img:hover {
+                object-fit: cover;
+                width: 110%;
+            }
+
+            img {
+                transition: all 2s;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#CarroselArtigos-container {
+    #carrosel {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+
+        p {
+            @extend #erro_p;
+        }
+
+        .artigoCarrosel {
+            font-family: $Ubuntu;
+            font-size: 1.5vw;
+            color: $verdeEscuro;
+            text-align: center;
+            background-color: $branco;
+            width: 18vw;
+            height: 23vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px 0px;
+            border-color: $verdeEscuro;
+            border-style: solid;
+            border-width: 5px;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px $verdeEscuro;
+
+            h3 {
+                background-color: transparent;
+                color: $verdeEscuro;
+                font-family: $Ubuntu;
+                font-size: 1.5vw;
+            }
+
+            img {
+                height: 10vw;
+                width: 15vw;
+                object-fit: cover;
+            }
+
+            a {
+                cursor: pointer;
+                width: 100%;
+                background-color: $branco;
+
+                button {
+                    border: none;
+                    color: $branco;
+                    font-size: 1.5vw;
+                    font-family: $Ubuntu;
+                    padding: 5px;
+                    cursor: pointer;
+                    width: 95%;
+                    background-color: $verdeEscuro;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+//TAMANHO MÉDIO
+@media (max-width: 950px) {
+
+    #intro-container {
+        #welcome {
+            h1 {
+                font-size: 15vw;
+                font-family: $Staaliches;
+                color: $verde;
+            }
+    
+            hr {
+                width: 15vw;;
+            }
+        }
+    
+        #sala {
+    
+            h2 {
+                font-size: 5vw;
+                color: $verdeEscuro;
+                font-family: $Staaliches;
+                text-align: center;
+            }
+        }
+    }
+
+    #CarroselImagens-container,
+    #CarroselArtigos-container {
+
+        h3,
+        #a {
+            font-size: 5vw;
+        }
+
+        a {
+            @extend #a;
+        }
+    }
+
+
+    #CarroselImagens-container {
+        #carrosel {
+            display: flex;
+
+            a{
+                gap: 10px;
+            }
+    
+            p {
+                @extend #erro_p;
+            }
+    
+            .img {
+                box-sizing: border-box;
+                width: 100%;
+                height: 49vw;
+            }
+        }
+    }
+    
+    #CarroselArtigos-container {
+        #carrosel {
+            flex-direction: column;
+    
+            .artigoCarrosel {
+                margin: 30px 0px;
+                width: 95vw;
+                height: 100vw;
+    
+                h3 {
+                    background-color: transparent;
+                    color: $verdeEscuro;
+                    font-family: $Ubuntu;
+                    font-size: 5vw;
+                }
+    
+                img {
+                    height: 50vw;
+                    width: 85vw;
+                    object-fit: cover;
+                }
+    
+                p{
+                    font-size: 5vw;
+                }
+
+                a {
+                    button {
+                        font-size: 5vw;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+

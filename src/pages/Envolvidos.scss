@@ -1,0 +1,76 @@
+@import '../principal/padrão.scss';
+
+#txt_envolvidos{
+    text-align: center;
+    padding: 30px;
+    font-size: 10vw;
+    font-family: $Staaliches;
+    color: $verde;
+}
+
+#menuEnvolvidos {
+    font-family: $Staaliches;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $branco;
+    color: $verdeEscuro;
+    padding: 10px 0px;
+
+    h2 {
+        cursor: pointer;
+
+    }
+}
+
+#envolvidos{
+    min-height: 50vh;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    h4{
+        font-family: $Ubuntu;
+        font-size: 30px;
+        color: $verdeEscuro;
+    }
+    p{
+        font-family: $Ubuntu;
+        font-size: 30px;
+        color: $verdeEscuro;
+    }
+    #pequeno{
+        font-family: $Ubuntu;
+        font-size: 20px;
+        color: $verdeEscuro;
+    }
+    div{
+        text-align: center;
+    }
+}
+
+@media (max-width: 950px) {
+    #txt_envolvidos{
+        font-size: 15vw;
+    }
+    
+    #menuEnvolvidos {
+        font-size: 4vw;
+    }
+    
+    #envolvidos{
+        h4, p{
+            font-size: 5vw;
+        }
+        #pequeno{
+            font-size: 4vw;
+        }
+    }
+
+}
+
+

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+$branco: #D4D9D1;
+$verdeEscuro: #233115;
+$verde: #697644;
+
+$Staaliches: "Staatliches", sans-serif;
+$Ubuntu: "Ubuntu", sans-serif;
+
+#erro_p {
+    color: $verdeEscuro;
+    font-family: $Ubuntu;
+    font-size: 1.5vw;
+    margin: 30px 0px;
+}

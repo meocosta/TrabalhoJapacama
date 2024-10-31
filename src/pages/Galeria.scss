@@ -1,0 +1,142 @@
+@import '../principal/padrão.scss';
+
+#imagem_aberta {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000c0;
+    padding: 20px 0px;
+
+    button {
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        margin: 0px 30px;
+        background: none;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    div {
+        width: 100vw;
+    }
+
+    #center_galeria {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        #img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+
+            img {
+                width: 100%;
+                height: 100%;
+                box-shadow: 10px 10px 10px black;
+                max-width: 30vw;
+                min-width: 10vw;
+                max-height: 40vw;
+                min-height: 10vw;
+                object-fit: cover;
+            }
+        }
+    }
+
+    #fechar_galeria {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    #descricao_galeria {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+#txt-galeria {
+    h1 {
+        font-size: 10vw;
+        font-family: $Staaliches;
+        color: $verde;
+        text-align: center;
+    }
+
+    p {
+        background-color: $verdeEscuro;
+        color: $branco;
+        font-family: $Ubuntu;
+        font-size: 2vw;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: 24.2vw 24.2vw 24.2vw 24.2vw;
+    flex-direction: row;
+
+    p {
+        @extend #erro_p;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .item-galeria {
+        width: 20vw;
+        height: 20vw;
+        margin: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+
+    #txt-galeria {
+        h1 {
+            font-size: 15vw;
+        }
+
+        p {
+            font-size: 5vw;
+        }
+    }
+
+    #galeria {
+        grid-template-columns: 48vw 48vw;
+
+        .item-galeria {
+            width: 45vw;
+            height: 45vw;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #imagem_aberta {
+        height: 75vh;
+        padding: 30px 0px;
+    }
+}

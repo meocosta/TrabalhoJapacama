@@ -1,0 +1,51 @@
+@import '../principal/padrão.scss';
+
+header {
+    background-color: $branco;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    #links {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    img {
+        max-width: 100px;
+    }
+
+    a {
+        cursor: pointer;
+        text-align: center;
+        width: 100px;
+        color: $verde;
+        font-family: $Staaliches;
+        font-size: 2vw;
+        text-decoration: none;
+        transition: all 1s;
+    }
+
+    a:hover {
+        color: $verdeEscuro;
+    }
+}
+
+;
+
+@media (max-width: 950px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+
+        a {
+            font-size: 4vw;
+        }
+
+    }
+}
+
+;

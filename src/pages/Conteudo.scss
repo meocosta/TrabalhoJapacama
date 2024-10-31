@@ -1,0 +1,164 @@
+@import '../principal/padrão.scss';
+
+#txt_conteúdo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $branco;
+    color: $verdeEscuro;
+    padding: 20px 0px;
+    h1{
+        font-family: $Staaliches;
+        font-size: 8vw;
+    }
+    hr{
+        width: 90%;
+        height: 5px;
+        background-color: $verdeEscuro;
+        margin: 10px;
+    }
+    p{
+        font-size: 2vw;
+        font-family: $Ubuntu;
+        text-align: center;
+    }
+}
+
+#conteúdo{
+    #pesquisa_container{
+        display: flex;
+        background-color: $verdeEscuro;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        input{
+            border-radius: 20px;
+            border: none;
+            color: $verdeEscuro;
+            padding: 10px;
+            width: 20vw;
+        }
+    }
+    #conteudo_container{
+        display: grid;
+        grid-template-columns: 24.5vw 24.5vw 24.5vw 24.5vw;
+        align-items: center;
+        justify-content: center;
+        row-gap: 30px;
+        min-height: 35vh;
+        overflow: hidden;
+        .item_conteúdo{
+            display: flex;
+            flex-direction: column;
+            width: 22vw;
+            min-height: 20vw;
+            align-items: center;
+            justify-content: space-around;
+            background-color: $branco;
+            padding: 10px;
+            margin: 20px 1.5vw;
+            h3{
+                font-family: $Staaliches;
+                color: $verdeEscuro;
+                font-size: 2vw;
+            }
+            .item_conteúdo_imagem{
+                width: 100%;
+                height: 15vw;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            p{
+                font-family: $Ubuntu;
+                font-size: 1.5vw;
+                color: $verdeEscuro;
+                text-align: center;
+                margin: 20px;
+            }
+            a button{
+                margin: 10px;
+                background-color: $verdeEscuro;
+                border: none;
+                color: $branco;
+                font-family: $Ubuntu;
+                font-size: 1.5vw;
+                padding: 10px;
+                width: 20vw;
+                cursor: pointer;
+            }
+        }
+        #erro-dev{
+            background-color: $branco;
+            padding: 30px;
+            text-align: center;
+            color: $verdeEscuro;
+            font-family: $Staaliches;
+            font-size: 2vw;
+            width: 100vw;
+        }
+    }
+}
+
+
+@media (max-width: 950px) {
+    #txt_conteúdo{
+        h1{
+            font-size: 15vw;
+        }
+        p{
+            font-size: 5vw;
+        }
+    }
+    
+    #conteúdo{
+        #pesquisa_container{
+            input{
+                padding: 30px;
+                font-size: 5vw;
+                height: 8vw;
+                width: 90vw;
+            }
+        }
+
+        #conteudo_container{
+            grid-template-columns: 48vw 48vw;
+            row-gap: 20px;
+            .item_conteúdo{
+                width: 45vw;
+                min-height: 50vw;
+                h3{
+                    font-size: 5vw;
+                }
+                p{
+                    margin: 20px;
+                    font-size: 4vw;
+                }
+                .item_conteúdo_imagem{
+                    height: 30vw;
+                }
+                a button{
+                    font-size: 4vw;
+                    width: 40vw;
+                    margin: 10px;
+                }
+            }
+            #erro-dev{
+                background-color: white;
+                padding: 30px;
+                text-align: center;
+                color: $verdeEscuro;
+                font-family: $Staaliches;
+                font-size: 5vw;
+                width: 100vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+   
+}
