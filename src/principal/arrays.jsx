@@ -70,7 +70,7 @@ export const fotos = [
 
 export const conteudo = [
     { nome: 'Julio Rebollo', número: 14, cargo: 'representante', grupo: "conteúdo" },
-    { nome: 'João Vitor Mechi', número: 404, cargo: 'integrante' },
+    { nome: 'João Vitor Mechi', número: 13, cargo: 'integrante' },
     { nome: 'Bruna', número: 2, cargo: 'integrante' },
 ];
 
@@ -86,8 +86,9 @@ export const conteudo = [
 
 
 export const apresentação = [
-    { nome: 'Enzo Magrini', número: 404, cargo: 'integrante' },
-    { nome: 'João Vitor Chaves', número: 36, cargo: 'integrante' }
+    { nome: 'Julio Rebollo', número: 14, cargo: 'representante', grupo: "conteúdo" },
+    { nome: 'Enzo Magrini', número: 5, cargo: 'integrante' },
+    { nome: 'João Vitor Chaves', número: 34, cargo: 'integrante' }
 ];
 
 
@@ -103,8 +104,12 @@ export const apresentação = [
 
 
 export const desing = [
-    { nome: 'Ryan', número: 404, cargo: 'representante', grupo: "desing" },
-    { nome: 'Maria Clara', número: 17, cargo: 'integrante' }
+    { nome: 'Ryan', número: 32, cargo: 'representante', grupo: "desing" },
+    { nome: 'Maria Clara', número: 17, cargo: 'integrante' },
+    { nome: 'Pedro Rodrigues', número: 36, cargo: 'integrante' },
+    { nome: 'Rodrigo Pascoto', número: 31, cargo: 'integrante' },
+    { nome: 'Vitória', número: 33, cargo: 'integrante' },
+    { nome: 'Bruno Teixeira', número: 3, cargo: 'integrante' },
 ];
 
 
@@ -124,6 +129,6 @@ export const site = [
     { nome: 'Brian Rudy', número: 1, cargo: 'representante', grupo: "site (deploy)" },
     { nome: 'Geovanna', número: 8, cargo: 'integrante' },
     { nome: 'Júlio Rebollo', número: 14, cargo: 'integrante' },
-    { nome: 'Pedro Henrique Lima', número: 28, cargo: 'integrante' },
+    { nome: 'Pedro Henrique Lima', número: 27, cargo: 'integrante' },
     { nome: 'Mariana Yuki', número: 19, cargo: 'integrante' }
 ];
