@@ -70,8 +70,18 @@ export const fotos = [
 
 export const conteudo = [
     { nome: 'Julio Rebollo', número: 14, cargo: 'representante', grupo: "conteúdo" },
-    { nome: 'João Vitor Mechi', número: 404, cargo: 'integrante' },
-    { nome: 'Bruna', número: 2, cargo: 'integrante' },
+    { nome: 'Bruna Lopes', número: 2, cargo: 'integrante' },
+    { nome: 'Murilo', número: 23, cargo: 'integrante' },
+    { nome: 'Fernando Monaco', número: 7, cargo: 'integrante' },
+    { nome: 'Gustavo Santana', número: 11, cargo: 'integrante' },
+    { nome: 'Raphael', número: 29, cargo: 'integrante' },
+    { nome: 'Miguel de Jesus', número: 21, cargo: 'integrante' },
+    { nome: 'Miguel Pires', número: 22, cargo: 'integrante' },
+    { nome: 'Rodrigo Dias', número: 30, cargo: 'integrante' },
+    { nome: 'Gustavo Curis', número: 10, cargo: 'integrante' },
+    { nome: 'Luan', número: 15, cargo: 'integrante' },
+    { nome: 'Isabelly Emiliano', número: 12, cargo: 'integrante' },
+    { nome: 'Fernando Marques', número: 6, cargo: 'integrante' },
 ];
 
 
@@ -86,8 +96,10 @@ export const conteudo = [
 
 
 export const apresentação = [
-    { nome: 'Enzo Magrini', número: 404, cargo: 'integrante' },
-    { nome: 'João Vitor Chaves', número: 36, cargo: 'integrante' }
+    { nome: 'Enzo Magrini', número: 5, cargo: 'integrante' },
+    { nome: 'Julio Rebollo', número: 14, cargo: 'representante', grupo: "conteúdo" },
+    { nome: 'Isabelly Emiliano', número: 12, cargo: 'integrante' },
+    { nome: 'Guilherme Caiado', número: 9, cargo: 'integrante' },
 ];
 
 
@@ -103,8 +115,17 @@ export const apresentação = [
 
 
 export const desing = [
-    { nome: 'Ryan', número: 404, cargo: 'representante', grupo: "desing" },
-    { nome: 'Maria Clara', número: 17, cargo: 'integrante' }
+    { nome: 'Ryan', número: 32, cargo: 'representante', grupo: "desing" },
+    { nome: 'Maria Clara', número: 17, cargo: 'integrante' },
+    { nome: 'Vitória', número: 33, cargo: 'integrante' },
+    { nome: 'Rodrigo', número: 31, cargo: 'integrante' },
+    { nome: 'Pedro', número: 36, cargo: 'integrante' },
+    { nome: 'Pedro Camargo', número: 26, cargo: 'integrante' },
+    { nome: 'Nickolas', número: 24, cargo: 'integrante' },
+    { nome: 'Bruno Teixeira', número: 3, cargo: 'integrante' },
+    { nome: 'João Vitor Chaves', número: 34, cargo: 'integrante' },
+    { nome: 'Pietro', número: 28, cargo: 'integrante' },
+    { nome: 'Julio Rebollo', número: 14, cargo: 'representante', grupo:'conteúdo' },
 ];
 
 
@@ -125,5 +146,6 @@ export const site = [
     { nome: 'Geovanna', número: 8, cargo: 'integrante' },
     { nome: 'Júlio Rebollo', número: 14, cargo: 'integrante' },
     { nome: 'Pedro Henrique Lima', número: 28, cargo: 'integrante' },
+    { nome: 'João Vitor Mechi', número: 13, cargo: 'integrante' },
     { nome: 'Mariana Yuki', número: 19, cargo: 'integrante' }
 ];
