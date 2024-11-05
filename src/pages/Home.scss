@@ -84,7 +84,7 @@
 #CarroselImagens-container {
     #carrosel {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
 
         p {
@@ -96,6 +96,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
         }
 
         .img {
