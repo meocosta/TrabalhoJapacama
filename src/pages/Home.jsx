@@ -110,7 +110,7 @@ function Home() {
             <section id='intro-container'>
                 <div id='welcome'><hr></hr><h1>bem vindo!</h1><hr /></div>
                 <div id='sala'>
-                    <h2>aqui você encontra o trabalho feito pelo XXXX</h2>
+                    <h2>aqui você encontra o trabalho feito pelo 9º ano D</h2>
                 </div>
             </section>
 
