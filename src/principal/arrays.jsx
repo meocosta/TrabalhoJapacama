@@ -76,7 +76,6 @@ export const conteudo = [
     { nome: 'Gustavo Santana', número: 11, cargo: 'integrante' },
     { nome: 'Raphael', número: 29, cargo: 'integrante' },
     { nome: 'Miguel de Jesus', número: 21, cargo: 'integrante' },
-    { nome: 'Miguel Pires', número: 22, cargo: 'integrante' },
     { nome: 'Rodrigo Dias', número: 30, cargo: 'integrante' },
     { nome: 'Gustavo Curis', número: 10, cargo: 'integrante' },
     { nome: 'Luan', número: 15, cargo: 'integrante' },
@@ -148,5 +147,6 @@ export const site = [
     { nome: 'Júlio Rebollo', número: 14, cargo: 'integrante' },
     { nome: 'Pedro Henrique Lima', número: 28, cargo: 'integrante' },
     { nome: 'João Vitor Mechi', número: 13, cargo: 'integrante' },
-    { nome: 'Mariana Yuki', número: 19, cargo: 'integrante' }
+    { nome: 'Mariana Yuki', número: 19, cargo: 'integrante' },
+    { nome: 'Miguel Pires', número: 22, cargo: 'integrante' }
 ];
