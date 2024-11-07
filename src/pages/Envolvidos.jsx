@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { conteudo, apresentação, desing, site } from '../principal/arrays';
+import { conteudo, apresentação, design, site } from '../principal/arrays';
 import './Envolvidos.scss';
 
 function Envolvidos() {
@@ -17,7 +17,7 @@ function Envolvidos() {
             <div id='menuEnvolvidos'>
                 <h2 style={content === site ? { color: '#233115', textDecoration: 'underline' } : { color: '#697644' }} onClick={content === site ? null : () => Change(site)} >Site</h2>
                 <h2 style={content === conteudo ? { color: '#233115', textDecoration: 'underline' } : { color: '#697644' }} onClick={content === conteudo ? null : () => Change(conteudo)}>Conteúdo</h2>
-                <h2 style={content === desing ? { color: '#233115', textDecoration: 'underline' } : { color: '#697644' }} onClick={content === desing ? null : () => Change(desing)}>Desing</h2>
+                <h2 style={content === design ? { color: '#233115', textDecoration: 'underline' } : { color: '#697644' }} onClick={content === design ? null : () => Change(desing)}>Design</h2>
                 <h2 style={content === apresentação ? { color: '#233115', textDecoration: 'underline' } : { color: '#697644' }} onClick={content === apresentação ? null : () => Change(apresentação)} >Apresentação</h2>
             </div>
             <div id='envolvidos'>

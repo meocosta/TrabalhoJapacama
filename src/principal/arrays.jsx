@@ -69,7 +69,7 @@ export const fotos = [
 
 
 export const conteudo = [
-    { nome: 'Julio Rebollo', número: 14, cargo: 'representante', grupo: "conteúdo" },
+    { nome: 'Rodrigo Dias', número: 30, cargo: 'representante', grupo:'conteúdo' },
     { nome: 'Bruna Lopes', número: 2, cargo: 'integrante' },
     { nome: 'Murilo', número: 23, cargo: 'integrante' },
     { nome: 'Fernando Monaco', número: 7, cargo: 'integrante' },
@@ -82,6 +82,7 @@ export const conteudo = [
     { nome: 'Luan', número: 15, cargo: 'integrante' },
     { nome: 'Isabelly Emiliano', número: 12, cargo: 'integrante' },
     { nome: 'Fernando Marques', número: 6, cargo: 'integrante' },
+    { nome: 'Julio Rebollo', número: 14, cargo: 'integrante'},
 ];
 
 
@@ -114,7 +115,7 @@ export const apresentação = [
 */
 
 
-export const desing = [
+export const design = [
     { nome: 'Ryan', número: 32, cargo: 'representante', grupo: "desing" },
     { nome: 'Maria Clara', número: 17, cargo: 'integrante' },
     { nome: 'Vitória', número: 33, cargo: 'integrante' },
