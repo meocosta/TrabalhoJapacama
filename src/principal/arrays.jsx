@@ -98,7 +98,7 @@ export const conteudo = [
 
 export const apresentação = [
     { nome: 'Enzo Magrini', número: 5, cargo: 'integrante' },
-    { nome: 'Julio Rebollo', número: 14, cargo: 'representante', grupo: "conteúdo" },
+    { nome: 'Julio Rebollo', número: 14, cargo: 'representante', grupo: "geral" },
     { nome: 'Isabelly Emiliano', número: 12, cargo: 'integrante' },
     { nome: 'Guilherme Caiado', número: 9, cargo: 'integrante' },
 ];
@@ -116,17 +116,17 @@ export const apresentação = [
 
 
 export const design = [
-    { nome: 'Ryan', número: 32, cargo: 'representante', grupo: "desing" },
+    { nome: 'Ryan', número: 32, cargo: 'representante', grupo: "design" },
+    { nome: 'Bruno Teixeira', número: 3, cargo: 'representante', grupo:"design" },
     { nome: 'Maria Clara', número: 17, cargo: 'integrante' },
     { nome: 'Vitória', número: 33, cargo: 'integrante' },
     { nome: 'Rodrigo', número: 31, cargo: 'integrante' },
     { nome: 'Pedro', número: 36, cargo: 'integrante' },
     { nome: 'Pedro Camargo', número: 26, cargo: 'integrante' },
     { nome: 'Nickolas', número: 24, cargo: 'integrante' },
-    { nome: 'Bruno Teixeira', número: 3, cargo: 'integrante' },
     { nome: 'João Vitor Chaves', número: 34, cargo: 'integrante' },
     { nome: 'Pietro', número: 28, cargo: 'integrante' },
-    { nome: 'Julio Rebollo', número: 14, cargo: 'representante', grupo:'conteúdo' },
+    { nome: 'Julio Rebollo', número: 14, cargo: 'representante', grupo:'geral' },
 ];
 
 
