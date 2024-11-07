@@ -86,6 +86,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
 
         p {
             @extend #erro_p;
