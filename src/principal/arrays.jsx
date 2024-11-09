@@ -1,4 +1,19 @@
 // Exemplo de importação: import imagemArtigo1 from '../visual/imagemartigo1exemplo.png';
+import imagem1 from '../visual/img1.jpg';
+import imagem2 from '../visual/img2.jpg';
+import imagem3 from '../visual/img3.jpg';
+import imagem4 from '../visual/img4.jpg';
+import imagem5 from '../visual/img5.jpg';
+import imagem6 from '../visual/img6.jpg';
+import imagem7 from '../visual/img7.jpg';
+import imagem8 from '../visual/img8.jpg';
+import imagem9 from '../visual/img9.jpg';
+import imagem10 from '../visual/img10.jpg';
+import imagem11 from '../visual/img11.jpg';
+import imagem12 from '../visual/img12.jpg';
+import imagem13 from '../visual/img13.jpg';
+
+
 
 /*
     Estrutura das fotos:
@@ -7,7 +22,19 @@
     - imagem: URL da imagem
 */
 export const fotos = [
-
+    {id:0, descrição:"fotos do evento", imagem:imagem1},
+    {id:1, descrição:"fotos do evento", imagem:imagem2},
+    {id:2, descrição:"fotos do evento", imagem:imagem3},
+    {id:3, descrição:"fotos do evento", imagem:imagem4},
+    {id:4, descrição:"fotos do evento", imagem:imagem5},
+    {id:5, descrição:"fotos do evento", imagem:imagem6},
+    {id:6, descrição:"fotos do evento", imagem:imagem7},
+    {id:7, descrição:"fotos do evento", imagem:imagem8},
+    {id:8, descrição:"fotos do evento", imagem:imagem9},
+    {id:9, descrição:"fotos do evento", imagem:imagem10},
+    {id:10, descrição:"fotos do evento", imagem:imagem11},
+    {id:11, descrição:"fotos do evento", imagem:imagem12},
+    {id:12, descrição:"fotos do evento", imagem:imagem13}
 ];
 
 
