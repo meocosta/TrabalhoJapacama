@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom";
-import { arquivos as conteudos } from "../principal/arrays";
-import { useState } from "react";
 import './Conteudo.scss'
 
 

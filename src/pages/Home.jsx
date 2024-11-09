@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { arquivos, fotos } from '../principal/arrays.jsx';
+import { fotos } from '../principal/arrays.jsx';
 import './Home.scss'
 
 
@@ -11,8 +11,6 @@ function Home() {
     const [ultimasFotos2, setUltimasFotos2] = useState([]);
     const [Booleano, setBooleano] = useState(true);
     const [carroselImg, setCarroselImg] = useState(true);
-
-    const[conteudoGrande, setconteudoGrande] = useState(false);
 
 
     //verifica se é um array e armazena 5 primeiros no primeiro e entre 5 e 10 no segundo
