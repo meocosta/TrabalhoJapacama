@@ -1,6 +1,23 @@
 @import '../principal/padrão.scss';
 
-#txt_conteúdo{
+body::-webkit-scrollbar {
+    /*Largura da barra lateral*/
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $verde;
+    /* Cor de fundo da trilha */
+}
+
+::-webkit-scrollbar-thumb {
+    background: $branco;
+    /* Cor do thumb */
+    border-radius: 25px;
+    /* Borda arredondada */
+}
+
+#txt_conteúdo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,157 +25,170 @@
     background-color: $branco;
     color: $verdeEscuro;
     padding: 20px 0px;
-    h1{
+
+    h1 {
         font-family: $Staaliches;
         font-size: 8vw;
+        font-weight: bold;
+
+        /* Efeito de brilho e aumento ao passar o mouse */
+        transition: all 0.3s ease;
+        /* Transição suave para as propriedades */
+
+        &:hover {
+
+            transform: scale(1.05);
+            /* Aumenta ligeiramente o tamanho */
+        }
     }
-    hr{
+
+    hr {
         width: 90%;
         height: 5px;
         background-color: $verdeEscuro;
         margin: 10px;
     }
-    p{
+
+    p {
         font-size: 2vw;
         font-family: $Ubuntu;
         text-align: center;
     }
+
 }
 
-#conteúdo{
-    #pesquisa_container{
+.separação {
+    /*Estilização da secunda div do header ./Conteudo.html line 14 */
+    background-color: #233115;
+    height: 20px;
+    width: 100vw;
+}
+
+#conteúdo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 50px;
+    font-family: $Ubuntu;
+
+    div {
+        overflow: hidden;
         display: flex;
-        background-color: $verdeEscuro;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        input{
-            border-radius: 20px;
-            border: none;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+            font-size: 5vw;
             color: $verdeEscuro;
-            padding: 10px;
-            width: 20vw;
+            text-align: center;
+        }
+
+        h2 {
+            color: $verdeEscuro;
+            font-size: 2vw;
+            text-align: center;
+        }
+
+        hr {
+            width: 95vw;
+            height: 5px;
+            background-color: $verde;
         }
     }
-    #conteudo_container{
-        display: grid;
-        grid-template-columns: 24.5vw 24.5vw 24.5vw 24.5vw;
-        align-items: center;
-        justify-content: center;
-        row-gap: 30px;
-        min-height: 35vh;
-        overflow: hidden;
-        .item_conteúdo{
-            display: flex;
-            flex-direction: column;
-            width: 22vw;
-            min-height: 20vw;
-            align-items: center;
-            justify-content: space-around;
-            background-color: $branco;
-            padding: 10px;
-            margin: 20px 1.5vw;
-            h3{
-                font-family: $Staaliches;
-                color: $verdeEscuro;
-                font-size: 2vw;
-            }
-            .item_conteúdo_imagem{
-                width: 100%;
-                height: 15vw;
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-            p{
-                font-family: $Ubuntu;
-                font-size: 1.5vw;
-                color: $verdeEscuro;
-                text-align: center;
-                margin: 20px;
-            }
-            a button{
-                margin: 10px;
-                background-color: $verdeEscuro;
-                border: none;
-                color: $branco;
-                font-family: $Ubuntu;
-                font-size: 1.5vw;
-                padding: 10px;
-                width: 20vw;
-                cursor: pointer;
-            }
+
+    .paragrafo {
+        font-family: $Ubuntu;
+        text-indent: 50px;
+        font-size: 1.5vw;
+    }
+}
+
+#bibliografia {
+    padding: 20px;
+    background-color: $branco;
+    color: $verde;
+    text-align: center;
+    font-size: 20px;
+    font-family: $Staaliches;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .cliqueaqui {
+        /*Estilização do botao clique aqui de bibliografia*/
+        text-decoration: none;
+        color: #233115;
+        font-size: 20px;
+        cursor: pointer;
+
+        /* Efeito de brilho e aumento ao passar o mouse */
+        transition: all 0.3s ease;
+        /* Transição suave para as propriedades */
+
+        &:hover {
+            transform: scale(1.1);
+            /* Aumenta ligeiramente o tamanho */
         }
-        #erro-dev{
-            background-color: $branco;
-            padding: 30px;
-            text-align: center;
-            color: $verdeEscuro;
-            font-family: $Staaliches;
-            font-size: 2vw;
-            width: 100vw;
+
+        &:active {
+            transform: scale(0.95);
+            /* Diminui ligeiramente o tamanho ao clicar */
         }
     }
 }
 
 
 @media (max-width: 950px) {
-    #txt_conteúdo{
-        h1{
+    #txt_conteúdo {
+        h1 {
             font-size: 15vw;
         }
-        p{
+
+        hr {
+            margin: 5px;
+        }
+
+        p {
             font-size: 5vw;
         }
+
     }
-    
-    #conteúdo{
-        #pesquisa_container{
-            input{
-                padding: 30px;
+
+    #conteúdo {
+        div {
+            h1 {
+                font-size: 7vw;
+            }
+
+            h2 {
                 font-size: 5vw;
-                height: 8vw;
-                width: 90vw;
             }
         }
 
-        #conteudo_container{
-            grid-template-columns: 48vw 48vw;
-            row-gap: 20px;
-            .item_conteúdo{
-                width: 45vw;
-                min-height: 50vw;
-                h3{
-                    font-size: 5vw;
-                }
-                p{
-                    margin: 20px;
-                    font-size: 4vw;
-                }
-                .item_conteúdo_imagem{
-                    height: 30vw;
-                }
-                a button{
-                    font-size: 4vw;
-                    width: 40vw;
-                    margin: 10px;
-                }
-            }
-            #erro-dev{
-                background-color: white;
-                padding: 30px;
-                text-align: center;
-                color: $verdeEscuro;
-                font-family: $Staaliches;
-                font-size: 5vw;
-                width: 100vw;
-            }
+        .paragrafo {
+            text-indent: 60px;
+            font-size: 4vw;
         }
     }
 }
 
-@media (max-width: 700px) {
-   
+@media (max-width: 500px) {
+    #txt_conteúdo {
+        h1 {
+            font-size: 20vw;
+        }
+    }
+
+    #conteúdo {
+        padding: 20px 30px;
+    }
+
+    #bibliografia {
+        padding: 10px;
+        font-size: 15px;
+
+        .cliqueaqui {
+            font-size: 15px;
+        }
+    }
 }
