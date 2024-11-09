@@ -59,10 +59,10 @@
 }
 
 #CarroselImagens-container,
-#CarroselArtigos-container {
+#Conteudo {
 
     h3,
-    #a {
+     a {
         font-family: $Ubuntu;
         color: $branco;
         text-align: center;
@@ -71,12 +71,11 @@
         font-size: 2vw;
     }
 
-    a {
+    h3 a {
         text-decoration: none;
         color: $verdeEscuro;
         cursor: pointer;
         font-size: 2vw;
-        @extend #a;
     }
 }
 
@@ -121,67 +120,38 @@
     }
 }
 
-#CarroselArtigos-container {
-    #carrosel {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+/*
+    <section id='Conteudo'>
+                <h3>Veja o <Link to='/conteudo'>conteudo</Link> produzidos por eles!</h3>
+                <div id='txt'>
+                    <p><Link to='/conteudo'>
+                        O modelo geocêntrico foi uma das primeiras concepções do universo e sustentava que
+                        a Terra era o centro do cosmos, com todos os corpos celestes, como o Sol, a Lua e as estrelas, girando ao
+                        seu redor. Esta teoria foi amplamente aceita durante a Antiguidade e a Idade Média, dominando o pensamento
+                        científico por mais de mil anos. Este trabalho examina a origem, o desenvolvimento e o impacto histórico do
+                        modelo geocêntrico, além de destacar a sua substituição por teorias mais avançadas, como o modelo
+                        heliocêntrico...
+                    </Link></p>
+                </div>
+            </section>
+*/
+
+
+#Conteudo {
+    #txt {
         background-color: white;
-
         p {
-            @extend #erro_p;
-        }
-
-        .artigoCarrosel {
-            font-family: $Ubuntu;
-            font-size: 1.5vw;
-            color: $verdeEscuro;
-            text-align: center;
             background-color: $branco;
-            width: 18vw;
-            height: 23vw;
+            padding: 20px;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            margin: 10px 0px;
-            border-color: $verdeEscuro;
-            border-style: solid;
-            border-width: 5px;
-            overflow: hidden;
-            box-shadow: 0px 0px 20px $verdeEscuro;
-
-            h3 {
-                background-color: transparent;
-                color: $verdeEscuro;
-                font-family: $Ubuntu;
-                font-size: 1.5vw;
-            }
-
-            img {
-                height: 10vw;
-                width: 15vw;
-                object-fit: cover;
-            }
-
-            a {
-                cursor: pointer;
-                width: 100%;
+            a{
                 background-color: $branco;
-
-                button {
-                    border: none;
-                    color: $branco;
-                    font-size: 1.5vw;
-                    font-family: $Ubuntu;
-                    padding: 5px;
-                    cursor: pointer;
-                    width: 95%;
-                    background-color: $verdeEscuro;
-                }
-            }
+                text-decoration: none;
+                color: $verdeEscuro;
+                cursor: pointer;
+            } 
         }
-
     }
 }
 
@@ -215,15 +185,11 @@
     }
 
     #CarroselImagens-container,
-    #CarroselArtigos-container {
+    #Conteudo {
 
         h3,
-        #a {
+        h3 a {
             font-size: 5vw;
-        }
-
-        a {
-            @extend #a;
         }
     }
 
@@ -248,39 +214,13 @@
         }
     }
     
-    #CarroselArtigos-container {
-        #carrosel {
-            flex-direction: column;
-    
-            .artigoCarrosel {
-                margin: 30px 0px;
-                width: 95vw;
-                height: 100vw;
-    
-                h3 {
-                    background-color: transparent;
-                    color: $verdeEscuro;
-                    font-family: $Ubuntu;
-                    font-size: 5vw;
-                }
-    
-                img {
-                    height: 50vw;
-                    width: 85vw;
-                    object-fit: cover;
-                }
-    
-                p{
-                    font-size: 5vw;
-                }
-
-                a {
-                    button {
-                        font-size: 5vw;
-                    }
-                }
+    #Conteudo {
+        #txt {
+            p {
+                a{
+                    font-size: 3vw;
+                } 
             }
-    
         }
     }
 }
